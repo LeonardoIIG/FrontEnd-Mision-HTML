@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Astro Pasteles</title>
+</head>
+<body>
+    
+    <div class="bg-image">
+        <div class="bg-text">
+        
+          <h1>Astro pasteles</h1>
+          <p>Pasteles fuera de este mundo</p>
+          <input type="button" class="button"  value="Conoce nuestros pasteles">
+        </div>
+        <img class="logo" src="../img/logo.png" alt="Logo de la panaderia">
+
+        <a href="admin.html" class="usuario"> Cambiar a Administrador </a>
+
+        
+
+    </div>
+    <div id="sabores" class="sabores">
+        <h2>-Sabores-</h2>
+        <table class="tabla">
+            <tr>
+                <th>Sabores</th>
+                <th>Chico</th>
+                <th>Mediano</th>
+                <th>Grande</th>
+            </tr>
+            <tr>
+                <td>Fresa</td>
+                <td>$50</td>
+                <td>$120</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Limon</td>
+                <td>$20</td>
+                <td>$60</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Vainilla</td>
+                <td>$40</td>
+                <td>$100</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>Zanahoria</td>
+                <td>$20</td>
+                <td>$50</td>
+                <td>$120</td>
+            </tr>
+        </table>
+        <p>*En caso de quererse un sabor combinado se cobrara la cantidad requerida para el porcentaje de pastel.</p>
+    </div>
+    
+    <div class="adornos">
+        <h2>-Adornos-</h2>
+        <table class="tabla">
+            <tr>
+                <th>Adornos</th>
+                <th>Chico</th>
+                <th>Mediano</th>
+                <th>Grande</th>
+            </tr>
+            <tr>
+                <td>Caramelo suave</td>
+                <td>$15</td>
+                <td>$30</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Frutas</td>
+                <td>$15</td>
+                <td>$30</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Fondant</td>
+                <td>$20</td>
+                <td>$60</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Chantilly</td>
+                <td>$20</td>
+                <td>$60</td>
+                <td>$90</td>
+            </tr>
+            <tr>
+                <td>Merengue</td>
+                <td>$10</td>
+                <td>$30</td>
+                <td>$70</td>
+            </tr>
+            <tr>
+                <td>Butter Cream</td>
+                <td>$20</td>
+                <td>$50</td>
+                <td>$120</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <form action="" id="pedido">
+            <h2>Su pedido</h2>
+    
+            <p>Sabores</p>
+            <input type="checkbox" name="Fresa" id=""><label for="">Fresa</label>
+            <input type="checkbox" name="Chocolate" id=""><label for="">Chocolate</label>
+            <input type="checkbox" name="Limon" id=""><label for="">Limon</label>
+            <input type="checkbox" name="Vainilla" id=""><label for="">Vainilla</label>
+            <input type="checkbox" name="Zanahoria" id=""><label for="">Zanahoria</label>
+            <br>
+    
+            <p>Adornos</p>
+            <input type="checkbox" name="Caramelo" id=""><label for="Caramelo">Caramelo suave</label>
+            <input type="checkbox" name="Frutas" id=""><label for="Frutas">Frutas</label>
+            <input type="checkbox" name="Fondant" id=""><label for="Fondant">Fondant</label>
+            <input type="checkbox" name="Chantilly" id=""><label for="Chantilly">Chantilly</label>
+            <input type="checkbox" name="Merengue" id=""><label for="Merengue">Merengue</label>
+            <input type="checkbox" name="ButterCream" id=""><label for="ButterCream">Butter Cream</label>
+    
+            <br><br>
+    
+            <label for="tamaño">Elige el tamaño de tu pastel</label><br>
+    
+            <select id="tamaño" name="tamaño">
+                <option disabled selected value>Tamaño</option>
+                <option value="Chico">Chico</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Grande">Grande</option>
+              </select>
+    
+    
+    
+            <label for="name">Nombre </label>
+            <input type="text" name="name" id="" placeholder="Ingresa tu nombre...">
+            <br>
+    
+            <label for="tel">Telefono / Celular </label>
+            <input type="tel" name="tel" id="" maxlength="10">
+            <br>
+    
+            <label for="email">Correo electrónico </label>
+            <input type="email" name="email" id="" maxlength="10">
+            <br>
+    
+            <label for="Descripcion">Descripciondel pedido </label>
+            <textarea name="Descripcion" id="" placeholder="Ingrese los detalles de su pedido..."></textarea>
+    
+            <input type="submit" value="Completar pedido">
+        </form>
+    </div>
+
+</body>
+
+</html>
